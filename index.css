@@ -157,7 +157,7 @@ ul {
 .content-container ul {
   list-style-type: none; /* Remove default bullet points */
   padding: 0; /* Remove default padding */
-  font-size: 18px; /* Set font size */
+  font-size: 14px; /* Set font size */
   line-height: 1.6; /* Adjust line height for readability */
   max-width: 10000px; /* Limit the width of the content */
 }
