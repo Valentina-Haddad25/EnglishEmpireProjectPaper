@@ -209,7 +209,7 @@ ul {
   }
 
   .styled-link {
-    font-size: calc(10px + 2vw); /* Increase font size for small screens */
+    font-size: calc(8px + 2vw); /* Increase font size for small screens */
     padding: 15px 30px; /* Adjust padding */
   }
   .content-container {
