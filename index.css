@@ -167,6 +167,8 @@ ul {
   margin-bottom: 15px; /* Add space between list items */
   font-size: 35px; /* Set font size */
 }
+
+/* PDF container styling */
 .pdf-container {
   display: flex; /* Flexbox for the PDF container */
   justify-content: center; /* Center the PDF horizontally */
@@ -178,11 +180,13 @@ ul {
 
 /* Styling for the embedded PDF */
 .pdf-embed {
-  width: 100%; /* Full width of the container */
-  height: 90vh; /* Height set to 90% of the viewport height */
+  width: 90%; /* Full width for the container */
+  height: 80vh; /* Adjust height to take up 80% of the viewport */
+  max-width: 800px; /* Set a maximum width to prevent overflow */
   border: 1px solid #ccc; /* Optional: border for visual structure */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: box-shadow */
 }
+
 
 
 /* Media query for screen widths less than 1000px */
@@ -212,14 +216,23 @@ ul {
     font-size: calc(8px + 2vw); /* Increase font size for small screens */
     padding: 15px 30px; /* Adjust padding */
   }
+  .pdf-embed {
+    width: 95%; /* Use 95% of the screen width */
+    height: 70vh; /* Set height to 70% of the viewport height */
+  }
+
   .content-container {
     width: 95%; /* Increase width on smaller screens */
-    padding: 20px; /* Adjust padding for mobile view */
-    margin-top: 20%; /* Increase top margin for spacing */
+    padding: 10px; /* Adjust padding for mobile view */
+    margin-top: 20%; /* Adjust top margin for spacing */
   }
-  .pdf-container embed {
-    width: 100%; /* Increase width to 90% for better visibility */
-    height: 100%; /* Maintain aspect ratio */
+
+  .button-container {
+    margin-top: 20px; /* Adjust spacing above buttons */
   }
+
+
+  /* Responsive design for very small screens like iPhone */
+
 
 }
