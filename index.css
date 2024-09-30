@@ -1,0 +1,226 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Styling for content headers (h1 and h4) inside content-bar */
+.content-bar h1, .content-bar h4 {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation bar styling */
+.nav-bar {
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  height: 15%; /* Fixed height for the nav-bar */
+  width: 100%; /* Full width for the nav-bar */
+  position: fixed; /* Fix position at the top of the screen */
+  top: 0;
+  left: 0;
+}
+
+
+/* Styling for the left section of the nav-bar */
+.nav-left {
+  display: flex; /* Flexbox layout for flexible alignment */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  margin-bottom: 0; /* Remove any space at the bottom */
+}
+
+/* Styling for the navigation bar name */
+.nav-name {
+  font-size: calc(20px + 2vw); /* Dynamic font size based on viewport width */
+  font-family: 'Tangerine', cursive; /* Applying custom font from Google Fonts */
+  color: white; /* Text color set to white */
+  margin: 0; /* Remove all margins */
+}
+
+/* Styling for the subheader text in the navigation bar */
+.navsubheader {
+  font-size: calc(11px + 0.5vw); /* Dynamic font size based on viewport width */
+  color: white; /* Text color set to white */
+  font-style: italic; /* Italicized text style */
+  margin-top: 5px; /* Add a small margin to the top */
+}
+
+/* Remove default list styles for the navigation menu */
+.nav-right li {
+  margin-bottom: 40px; /* Adds space below each list item */
+}
+
+/* Styling for the anchor tags (links) inside the list items */
+.nav-right li a {
+  color: white; /* Text color set to white */
+  font-size: calc(5px + 1.5vw); /* Dynamic font size based on viewport width */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Displays links as block elements to occupy the full width */
+  padding: 9px 2px; /* Padding for spacing inside the links */
+}
+
+/* Styling for the image container */
+#homepageimage {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: calc(100vh - 15%); /* Adjusts height based on header height */
+  margin-top: 2%; /* Moves image down to account for header height */
+  width: 100%; /* Full width to ensure centering */
+  margin: 0 auto; /* Centers the container itself */
+}
+
+/* Styling for the image inside #homepageimage */
+#homepageimage img {
+  width: 40%; /* Reduce width to make the image smaller */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures image scales without distortion */
+}
+
+
+/* Styling for each list item */
+.content-container {
+  margin-top: 8%; /* Add margin to push the content down below the navigation */
+  padding: 30px; /* Add padding for spacing */
+  width: 80%; /* Increase width to occupy more horizontal space */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+  line-height: 1.8; /* Increase line spacing for readability */
+}
+
+/* Styling for the button container */
+.button-container {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers buttons horizontally */
+  margin-top: 30px; /* Adds space above the buttons */
+}
+
+/* Styling for the link-list */
+.link-list {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange items in a horizontal row */
+  gap: 20px; /* Space between buttons */
+}
+
+/* Styling for each list item */
+.link-list li {
+  margin: 0 15px; /* Add space between each list item */
+}
+
+/* Styling for the anchor tags (links) */
+.styled-link {
+  font-size: calc(12px + 1vw); /* Dynamic font size based on viewport width */
+  font-family: Arial, sans-serif; /* Change font family */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  background-color: darkolivegreen; /* Background color for buttons */
+  padding: 10px 20px; /* Padding inside the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Hover effect for the links */
+.styled-link:hover {
+  background-color: white; /* Change background color on hover */
+  color: darkolivegreen; /* Maintain text color on hover */
+  border-color: darkolivegreen;
+}
+
+body {
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+.content-container img {
+  display: block; /* Ensure images are block elements */
+  max-width: 100%; /* Prevent images from overflowing */
+  margin: 10px 0; /* Add vertical spacing */
+}
+
+/* Style for the list inside the content container */
+.content-container ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  font-size: 18px; /* Set font size */
+  line-height: 1.6; /* Adjust line height for readability */
+  max-width: 10000px; /* Limit the width of the content */
+}
+
+/* Additional styling if needed */
+.content-container li {
+  margin-bottom: 15px; /* Add space between list items */
+  font-size: 35px; /* Set font size */
+}
+.pdf-container {
+  display: flex; /* Flexbox for the PDF container */
+  justify-content: center; /* Center the PDF horizontally */
+  align-items: center; /* Center the PDF vertically */
+  width: 100%; /* Full width for the container */
+  overflow: auto; /* Allow scroll if content overflows */
+  margin: 20px 0; /* Space around the PDF */
+}
+
+/* Styling for the embedded PDF */
+.pdf-embed {
+  width: 100%; /* Full width of the container */
+  height: 90vh; /* Height set to 90% of the viewport height */
+  border: 1px solid #ccc; /* Optional: border for visual structure */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: box-shadow */
+}
+
+
+/* Media query for screen widths less than 1000px */
+@media screen and (max-width: 1000px) {
+  #homepageimage {
+    margin-top: 15%; /* Adjust top margin to ensure spacing */
+    margin-right: 0; /* Remove right margin */
+    height: calc(100vh - 15%); /* Maintain container height */
+  }
+
+  #homepageimage img {
+    width: 80%; /* Increase width to occupy more space */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+  .link-list {
+    flex-direction: column; /* Stack links vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .link-list li {
+    margin: 10px 0; /* Add space above and below each list item */
+  }
+
+  .styled-link {
+    font-size: calc(10px + 2vw); /* Increase font size for small screens */
+    padding: 15px 30px; /* Adjust padding */
+  }
+  .content-container {
+    width: 95%; /* Increase width on smaller screens */
+    padding: 20px; /* Adjust padding for mobile view */
+    margin-top: 20%; /* Increase top margin for spacing */
+  }
+  .pdf-container embed {
+    width: 100%; /* Increase width to 90% for better visibility */
+    height: 100%; /* Maintain aspect ratio */
+  }
+
+
+}
